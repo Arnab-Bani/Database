@@ -1,0 +1,5 @@
+INSERT INTO `food`.`user` (`USER_ID`, `PASSWORD`, `FIRST_NAME`, `LAST_NAME`, `EMAIL`, `STATUS`, `CREATED_BY`, `ROLE`) VALUES ('admin', '$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC', 'admin', 'Administrator', 'admin@localhost', 'true', 'system', 'ROLE_USER');
+INSERT INTO `food`.`user` (`USER_ID`, `PASSWORD`, `FIRST_NAME`, `LAST_NAME`, `EMAIL`, `STATUS`, `CREATED_BY`, `ROLE`) VALUES ('user', '$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K', '', 'User', 'user@localhost', 'true', 'system', 'ROLE_USER');
+INSERT INTO `food`.`user` (`USER_ID`, `PASSWORD`, `LAST_NAME`, `EMAIL`, `STATUS`, `CREATED_BY`, `ROLE`) VALUES ('system', '$2a$10$mE.qmcV0mFU5NcKh73TZx.z4ueI/.bDWbj0T1BYyqP481kGGarKLG','', 'System', 'system@localhost', 'true', 'system', 'ROLE_USER,ROLE_ADMIN');
+INSERT INTO `food`.`user` (`USER_ID`, `PASSWORD`, `FIRST_NAME`, `LAST_NAME`, `EMAIL`, `STATUS`, `CREATED_BY`, `ROLE`) VALUES ('anonymousUser', '$2a$10$j8S5d7Sr7.8VTOYNviDPOeWX8KcYILUVJBsYV83Y5NtECayypx9lO', 'Anonymous', 'User', 'anonymous@localhost', 'true', 'system', 'ROLE_USER');
+commit;
